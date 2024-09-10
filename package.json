@@ -2,7 +2,9 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "vite",
+        "dev": "npm-run-all --parallel serve vite",
+        "serve": "php artisan serve",
+        "vite": "vite",
         "build": "vite build"
     },
     "devDependencies": {
@@ -16,5 +18,17 @@
         "tailwindcss": "^3.2.1",
         "vite": "^5.0",
         "vue": "^3.4.0"
+    },
+    "dependencies": {
+        "@headlessui/vue": "^1.7.23",
+        "@heroicons/vue": "^2.1.5",
+        "@vueuse/core": "^11.0.3",
+        "class-variance-authority": "^0.7.0",
+        "clsx": "^2.1.1",
+        "dayjs": "^1.11.13",
+        "lodash": "^4.17.21",
+        "npm-run-all": "^4.1.5",
+        "tailwind-merge": "^2.5.2",
+        "vue-tailwind-datepicker": "^1.7.3"
     }
 }
