@@ -1,22 +1,48 @@
 <script setup>
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import { reactive } from 'vue';
 import { Head } from '@inertiajs/vue3';
+import Accordion from '@/Components/Accordion.vue'
+
+const example = reactive([
+  {
+    id: 1,
+    active: true,
+    title: 'Crushing Spirits',
+    details: `
+      <p>You can crush me but you can't crush my spirit! Are you crazy? I can't swallow that. Who's brave enough to fly into something we all keep calling a death sphere? It doesn't look so shiny to me.</p>
+      <ul>
+        <li>I just want to talk.</li>
+        <li>It has nothing to do with mating.</li>
+        <li>Fry, that doesn't make sense.</li>
+      </ul>
+    `
+  },
+  {
+    id: 2,
+    active: false,
+    title: 'Soundtracks',
+    details: `
+      <p>Ah, the 'Breakfast Club' soundtrack! I can't wait til I'm old enough to feel ways about stuff!</p>
+    `
+  },
+  {
+    id: 3,
+    active: false,
+    title: `The Letter Shaped Like a Man's Hat`,
+    details: `
+      <p>And then the battle's not so bad? You'll have all the Slurm you can drink when you're partying with Slurms McKenzie! Say it in Russian!</p>
+      <p>Morbo can't understand his teleprompter because he forgot how you say that letter that's shaped like a man wearing a hat.</p>
+    `
+  }
+]);
 </script>
-
 <template>
-    <Head title="Dashboard" />
-
-    <AuthenticatedLayout>
-        <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">Dashboard</h2>
-        </template>
-
-        <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 text-gray-900 dark:text-gray-100">You're logged in!</div>
-                </div>
-            </div>
-        </div>
-    </AuthenticatedLayout>
+<Head title="Dashboard" />
+    <Accordion id="accordion-example-1" :content="example"></Accordion>
 </template>
+
+
+<style>
+
+
+</style>
