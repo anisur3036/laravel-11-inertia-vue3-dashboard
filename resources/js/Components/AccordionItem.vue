@@ -23,11 +23,14 @@ const toggleItem = (event) => {
 };
 
 const startTransition = (el) => {
-  el.style.height = el.scrollHeight + 'px';
+  el.style.height = '0';
+  el.style.overflow = 'hidden';
+  el.style.height = el.scrollHeight + 'px'
 };
 
 const endTransition = (el) => {
-  el.style.height = '';
+   el.style.height = el.scrollHeight + 'px';
+  el.style.overflow = 'hidden';
 };
 
 </script>
@@ -56,5 +59,8 @@ const endTransition = (el) => {
 
 
 <style>
-
+.accordion-item-details {
+  transition: height 300ms ease;
+  overflow: hidden;
+}
 </style>

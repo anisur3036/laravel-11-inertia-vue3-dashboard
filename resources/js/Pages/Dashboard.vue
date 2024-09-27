@@ -1,48 +1,13 @@
 <script setup>
 import { reactive } from 'vue';
 import { Head } from '@inertiajs/vue3';
-import Accordion from '@/Components/Accordion.vue'
+import AppLayout from '@/Layouts/AppLayout.vue';
 
-const example = reactive([
-  {
-    id: 1,
-    active: true,
-    title: 'Crushing Spirits',
-    details: `
-      <p>You can crush me but you can't crush my spirit! Are you crazy? I can't swallow that. Who's brave enough to fly into something we all keep calling a death sphere? It doesn't look so shiny to me.</p>
-      <ul>
-        <li>I just want to talk.</li>
-        <li>It has nothing to do with mating.</li>
-        <li>Fry, that doesn't make sense.</li>
-      </ul>
-    `
-  },
-  {
-    id: 2,
-    active: false,
-    title: 'Soundtracks',
-    details: `
-      <p>Ah, the 'Breakfast Club' soundtrack! I can't wait til I'm old enough to feel ways about stuff!</p>
-    `
-  },
-  {
-    id: 3,
-    active: false,
-    title: `The Letter Shaped Like a Man's Hat`,
-    details: `
-      <p>And then the battle's not so bad? You'll have all the Slurm you can drink when you're partying with Slurms McKenzie! Say it in Russian!</p>
-      <p>Morbo can't understand his teleprompter because he forgot how you say that letter that's shaped like a man wearing a hat.</p>
-    `
-  }
-]);
 </script>
+
 <template>
-<Head title="Dashboard" />
-    <Accordion id="accordion-example-1" :content="example"></Accordion>
+  <AppLayout>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, praesentium. Aperiam sed dolores praesentium repellendus consequuntur nam placeat aliquid cupiditate, deserunt temporibus nostrum similique ipsum. Eaque quis odit nobis delectus cumque quisquam repellat quaerat facilis dolore blanditiis ducimus, inventore vel eveniet, saepe fuga quam omnis ullam ea amet exercitationem itaque voluptatem magnam. Praesentium ullam nihil, quas possimus. Maxime ad placeat delectus eaque voluptatem nesciunt, necessitatibus assumenda quia reprehenderit, laboriosam ea ex vel quisquam, eligendi veritatis perspiciatis eveniet sunt. Delectus, minus ut dignissimos labore nesciunt sunt nisi error? Doloribus sequi quia, dolor cupiditate neque debitis provident temporibus assumenda ipsa deleniti, quibusdam cumque labore illum, ratione dolore, tempore eius vero repellat officiis nam esse et. Perferendis, corporis. Odit, saepe quia atque voluptate! Nesciunt provident, odio praesentium vel eligendi dolores deleniti, quia. Culpa ratione rerum temporibus molestiae delectus consectetur expedita explicabo accusamus, laboriosam rem nihil maxime ex reprehenderit aperiam, aliquid, ipsam, repellendus placeat sit modi dicta earum natus quae ipsa ullam quidem! Earum, placeat, quo! Deserunt quam ut repellendus laudantium facilis, reprehenderit quisquam explicabo error reiciendis officia tempore eos labore nulla aliquam id, necessitatibus ipsam sed dolores atque tenetur ratione distinctio alias. Vel illo nam placeat id, numquam! Fuga, nobis consequuntur. Corrupti porro provident architecto eius perspiciatis possimus accusamus quia. Eum, corrupti harum delectus quo, earum at reprehenderit unde aspernatur culpa doloremque magni rerum quas rem labore eveniet animi. Quam nulla tenetur, voluptate iure, dolor, libero aperiam deserunt voluptatem quo molestias alias minima placeat eos odit aliquid consequatur ex autem repellat reiciendis dolores quibusdam, a quasi optio. Pariatur, esse, assumenda? Facere, quos error possimus. Repellat vel, quam tenetur. Autem nostrum explicabo veniam sunt facere iusto, nulla modi ad dicta aliquam, molestiae ipsam quidem repellendus perspiciatis a error laborum. Unde quae officiis sit, tempore repellat voluptatem, incidunt odit! Dolores quo aliquam rem, eius deserunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti alias quia a, quam rem, adipisci soluta officia iusto dolorem consequuntur omnis maiores nesciunt. Velit omnis natus asperiores reprehenderit consectetur harum magni aspernatur ratione? Unde inventore iure quia molestiae commodi iste! Illo natus dolorum, quo? Odit eum placeat minima ab voluptatem cupiditate amet error dolorum ex harum dolores ratione nobis minus eos adipisci repellendus magni omnis quaerat laboriosam quas, aliquam. Numquam, quis adipisci a aperiam voluptas magnam laudantium voluptatem corrupti autem, obcaecati dolor quidem. Tempore vel quod cum officia assumenda voluptatem temporibus laborum eos rerum neque placeat saepe aperiam et nesciunt corrupti dicta aspernatur harum quaerat quam, nisi? Natus sed dolores dicta, veritatis, nesciunt, commodi iure ullam quam laboriosam minus fugiat hic debitis cupiditate voluptatem quaerat sunt eius non repudiandae perferendis eaque voluptas fugit optio perspiciatis corrupti. Aliquam autem excepturi, sunt voluptatem accusantium id ad voluptatibus eaque, saepe, nisi placeat fugit reprehenderit. Assumenda consectetur iusto, voluptatum ipsa hic, vel aliquid inventore fugit corrupti. Odio id facilis voluptate aliquid ducimus error possimus placeat vero dolorum. Expedita architecto commodi, porro consectetur rerum illo nesciunt suscipit quaerat officia minus recusandae libero laboriosam quas consequatur, corrupti fugiat a, obcaecati pariatur laborum quis illum molestiae. Voluptatibus ex a dolores quidem, quibusdam, ullam iusto animi quae dolorem corporis at perspiciatis accusantium voluptatem, unde, dolor deleniti. Exercitationem sunt labore nostrum culpa deleniti, assumenda eum minus ut, ipsum dicta voluptatibus tempore, explicabo in reiciendis laudantium eaque eos, sint praesentium laborum illum ab. Perspiciatis nemo assumenda tenetur iste expedita enim error corporis doloremque minima rem voluptatum dignissimos dolorem quos voluptatibus, officiis ratione neque illo. Sed illo officia, ad facere modi doloremque deserunt maxime suscipit voluptatum eos laborum? Doloribus voluptatum eum soluta doloremque voluptates fuga ab illo nam culpa veritatis. Fuga perspiciatis reiciendis nulla, nesciunt facere eos, et quae. Quae, est.</div>
+  </AppLayout>
 </template>
 
-
-<style>
-
-
-</style>
